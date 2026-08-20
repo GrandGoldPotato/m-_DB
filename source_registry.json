@@ -3,79 +3,27 @@
     "id": "SRC01",
     "name": "건설공사 표준품셈",
     "grade": "B",
-    "mode": "latest_post",
+    "mode": "codil_latest",
     "url": "https://www.codil.or.kr/helpdesk/search.do?bbsAttrbCode=BBSA01&bbsId=BBSMSTR_900000000202",
-    "include_all": [
-      "표준품셈"
-    ],
-    "include_any": [
-      "2026",
-      "2027",
-      "2028",
-      "2029",
-      "2030"
-    ],
-    "exclude_any": [
-      "신기술"
-    ],
-    "required_href_any": [
-      "read.do",
-      "nttId="
-    ],
-    "detail_base": "https://www.codil.or.kr",
-    "id_params": [
-      "nttId"
-    ]
+    "bbs_id": "BBSMSTR_900000000202",
+    "title_regex": "20\\d{2}년(?:\\s*하반기\\s*적용)?\\s*건설공사\\s*표준품셈"
   },
   {
     "id": "SRC02",
     "name": "건설공사 표준시장단가",
     "grade": "B",
-    "mode": "latest_post",
+    "mode": "codil_latest",
     "url": "https://www.codil.or.kr/helpdesk/search.do?bbsAttrbCode=BBSA01&bbsId=BBSMSTR_900000000204",
-    "include_all": [
-      "표준시장단가"
-    ],
-    "include_any": [
-      "2026",
-      "2027",
-      "2028",
-      "2029",
-      "2030"
-    ],
-    "exclude_any": [],
-    "required_href_any": [
-      "read.do",
-      "nttId="
-    ],
-    "detail_base": "https://www.codil.or.kr",
-    "id_params": [
-      "nttId"
-    ]
+    "bbs_id": "BBSMSTR_900000000204",
+    "title_regex": "20\\d{2}년\\s*(?:상반기|하반기)\\s*표준시장단가"
   },
   {
     "id": "SRC03",
     "name": "건설업 임금실태조사",
     "grade": "B",
-    "mode": "latest_post",
-    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/list.do?cat=&condition=&cpage=1&keyword=&rows=10",
-    "include_all": [
-      "건설업 임금실태조사",
-      "보고서"
-    ],
-    "include_any": [],
-    "exclude_any": [
-      "공표 일정",
-      "참고사항"
-    ],
-    "required_href_any": [
-      "view.do",
-      "article_seq="
-    ],
-    "detail_base": "https://info.cak.or.kr",
-    "id_params": [
-      "article_seq"
-    ]
+    "mode": "cak_latest",
+    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/list.do",
+    "title_regex": "20\\d{2}년\\s*(?:상반기|하반기)\\s*적용\\s*건설업\\s*임금실태조사\\s*보고서"
   },
   {
     "id": "SRC04",
@@ -86,12 +34,6 @@
     "include_all": [
       "간접공사비",
       "제비율"
-    ],
-    "include_any": [],
-    "exclude_any": [],
-    "detail_base": "https://www.pps.go.kr",
-    "id_params": [
-      "bbsSn"
     ],
     "known_detail_url": "https://www.pps.go.kr/kor/bbs/view.do?bbsSn=2604070010&key=00038",
     "known_title": "2026년 조달청 시설공사 원가계산 간접공사비(제비율) 적용기준 변경 알림"
