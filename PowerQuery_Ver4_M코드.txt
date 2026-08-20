@@ -1,0 +1,13 @@
+let
+    Url = "여기에_GitHub_Raw_TSV_URL",
+    Source = Csv.Document(
+        Web.Contents(Url),
+        [Delimiter="#(tab)", Encoding=65001, QuoteStyle=QuoteStyle.None]
+    ),
+    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    Typed = Table.TransformColumnTypes(
+        Headers,
+        {{"Key", type text}, {"기준단가", Int64.Type}, {"기준일", type text}, {"버전", type text}, {"비고", type text}}
+    )
+in
+    Typed
