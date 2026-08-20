@@ -1,0 +1,27 @@
+name: Official source watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # 09:00 KST
+
+permissions:
+  contents: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check official sources
+        run: python scripts/source_watch.py
+      - name: Commit status if changed
+        run: |
+          git config user.name "mdang-source-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add source_status.json
+          git diff --cached --quiet || git commit -m "Update official source status"
+          git push
