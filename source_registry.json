@@ -6,13 +6,26 @@
     "mode": "latest_post",
     "url": "https://www.codil.or.kr/helpdesk/search.do?bbsAttrbCode=BBSA01&bbsId=BBSMSTR_900000000202",
     "include_all": [
-      "건설공사",
       "표준품셈"
+    ],
+    "include_any": [
+      "2026",
+      "2027",
+      "2028",
+      "2029",
+      "2030"
     ],
     "exclude_any": [
       "신기술"
     ],
-    "detail_base": "https://www.codil.or.kr"
+    "required_href_any": [
+      "read.do",
+      "nttId="
+    ],
+    "detail_base": "https://www.codil.or.kr",
+    "id_params": [
+      "nttId"
+    ]
   },
   {
     "id": "SRC02",
@@ -23,58 +36,79 @@
     "include_all": [
       "표준시장단가"
     ],
+    "include_any": [
+      "2026",
+      "2027",
+      "2028",
+      "2029",
+      "2030"
+    ],
     "exclude_any": [],
-    "detail_base": "https://www.codil.or.kr"
+    "required_href_any": [
+      "read.do",
+      "nttId="
+    ],
+    "detail_base": "https://www.codil.or.kr",
+    "id_params": [
+      "nttId"
+    ]
   },
   {
     "id": "SRC03",
     "name": "건설업 임금실태조사",
     "grade": "B",
     "mode": "latest_post",
-    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/list.do",
+    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/list.do?cat=&condition=&cpage=1&keyword=&rows=10",
     "include_all": [
       "건설업 임금실태조사",
       "보고서"
     ],
+    "include_any": [],
     "exclude_any": [
       "공표 일정",
-      "참고"
+      "참고사항"
     ],
-    "detail_base": "https://info.cak.or.kr"
+    "required_href_any": [
+      "view.do",
+      "article_seq="
+    ],
+    "detail_base": "https://info.cak.or.kr",
+    "id_params": [
+      "article_seq"
+    ]
   },
   {
     "id": "SRC04",
     "name": "조달청 간접공사비(제비율)",
     "grade": "B",
-    "mode": "latest_post",
+    "mode": "latest_or_known",
     "url": "https://www.pps.go.kr/kor/bbs/list.do?key=00038",
     "include_all": [
       "간접공사비",
       "제비율"
     ],
+    "include_any": [],
     "exclude_any": [],
-    "detail_base": "https://www.pps.go.kr"
+    "detail_base": "https://www.pps.go.kr",
+    "id_params": [
+      "bbsSn"
+    ],
+    "known_detail_url": "https://www.pps.go.kr/kor/bbs/view.do?bbsSn=2604070010&key=00038",
+    "known_title": "2026년 조달청 시설공사 원가계산 간접공사비(제비율) 적용기준 변경 알림"
   },
   {
     "id": "SRC05",
-    "name": "지방자치단체 입찰 및 계약집행기준",
+    "name": "지방자치단체 입찰 및 계약 집행기준",
     "grade": "B",
-    "mode": "latest_post",
-    "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardList.do?bbsId=BBSMSTR_000000000016",
-    "include_all": [
-      "지방자치단체 입찰 및 계약집행기준"
-    ],
-    "exclude_any": [],
-    "detail_base": "https://www.mois.go.kr"
+    "mode": "rule_page",
+    "url": "https://law.go.kr/admRulLsInfoP.do?admRulId=29508&efYd=0",
+    "rule_name": "지방자치단체 입찰 및 계약 집행기준"
   },
   {
     "id": "SRC06",
     "name": "나라장터 가격정보현황서비스",
     "grade": "A",
     "mode": "api_catalog",
-    "url": "https://www.data.go.kr/data/15129415/openapi.do",
-    "include_all": [],
-    "exclude_any": [],
-    "detail_base": "https://www.data.go.kr"
+    "url": "https://www.data.go.kr/data/15129415/openapi.do"
   }
 ]
