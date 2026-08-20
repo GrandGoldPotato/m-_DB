@@ -1,0 +1,78 @@
+[
+  {
+    "id": "SRC01",
+    "name": "건설공사 표준품셈",
+    "grade": "B",
+    "url": "https://www.codil.or.kr/helpdesk/read.do?bbsId=BBSMSTR_900000000202&nttId=13261&searchWrd=",
+    "checked_at": "2026-08-20T05:21:47.509751+00:00",
+    "status": "ERROR",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "changed": false
+  },
+  {
+    "id": "SRC02",
+    "name": "건설공사 표준시장단가",
+    "grade": "B",
+    "url": "https://www.codil.or.kr/helpdesk/read.do?bbsId=BBSMSTR_900000000204&nttId=13281&searchWrd=",
+    "checked_at": "2026-08-20T05:21:49.013839+00:00",
+    "status": "ERROR",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "changed": false
+  },
+  {
+    "id": "SRC03",
+    "name": "건설업 임금실태조사",
+    "grade": "B",
+    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/view.do?article_seq=153402&condition=&cpage=1&keyword=&mode=view&rows=10",
+    "checked_at": "2026-08-20T05:21:50.129872+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "sha256": "7c9bdf79b1cac62aba4c14129ca9d58394535441110837d1429cfaac8f1f8cb9",
+    "title": "대한건설협회>지원·사업>건설적산기준>건설임금",
+    "changed": false,
+    "status": "OK"
+  },
+  {
+    "id": "SRC04",
+    "name": "조달청 간접공사비(제비율)",
+    "grade": "B",
+    "url": "https://www.pps.go.kr/kor/bbs/view.do?bbsSn=2512300024&key=00038",
+    "checked_at": "2026-08-20T05:21:52.405551+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "sha256": "41b805690b8e32e71e741e85685f88162282a81477c09a8f824e3726e4753b42",
+    "title": "시설공사 | 조달청",
+    "changed": false,
+    "status": "OK"
+  },
+  {
+    "id": "SRC05",
+    "name": "지방자치단체 입찰 및 계약집행기준",
+    "grade": "B",
+    "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000016&nttId=127353",
+    "checked_at": "2026-08-20T05:21:54.324570+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "sha256": "e163e376399b18520040fede06545eb15e83947cdefe2995ab9d1e0ae36275e7",
+    "title": "지방자치단체 입찰 및 계약집행기준(행정안전부 예규 제372호) 및 지방자치단체 입찰시 낙찰자 결정기준(행정안전부 예규 제373호) 일부 개정 | 행정안전부&gt; 정책자료&gt; 법령정보&gt; 훈령·예규·고시",
+    "changed": false,
+    "status": "OK"
+  },
+  {
+    "id": "SRC06",
+    "name": "나라장터 가격정보현황서비스",
+    "grade": "A",
+    "url": "https://www.data.go.kr/data/15129415/openapi.do",
+    "checked_at": "2026-08-20T05:21:55.962241+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "sha256": "6a95118b0dd13ce0ae0d4bbf7432d21cb341155d62e24aa9501f9999e786e9f1",
+    "title": "조달청_나라장터 가격정보현황서비스 | 공공데이터포털",
+    "changed": false,
+    "status": "OK"
+  }
+]
