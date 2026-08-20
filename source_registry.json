@@ -3,36 +3,78 @@
     "id": "SRC01",
     "name": "건설공사 표준품셈",
     "grade": "B",
-    "url": "https://www.codil.or.kr/helpdesk/read.do?bbsId=BBSMSTR_900000000202&nttId=13261&searchWrd="
+    "mode": "latest_post",
+    "url": "https://www.codil.or.kr/helpdesk/search.do?bbsAttrbCode=BBSA01&bbsId=BBSMSTR_900000000202",
+    "include_all": [
+      "건설공사",
+      "표준품셈"
+    ],
+    "exclude_any": [
+      "신기술"
+    ],
+    "detail_base": "https://www.codil.or.kr"
   },
   {
     "id": "SRC02",
     "name": "건설공사 표준시장단가",
     "grade": "B",
-    "url": "https://www.codil.or.kr/helpdesk/read.do?bbsId=BBSMSTR_900000000204&nttId=13281&searchWrd="
+    "mode": "latest_post",
+    "url": "https://www.codil.or.kr/helpdesk/search.do?bbsAttrbCode=BBSA01&bbsId=BBSMSTR_900000000204",
+    "include_all": [
+      "표준시장단가"
+    ],
+    "exclude_any": [],
+    "detail_base": "https://www.codil.or.kr"
   },
   {
     "id": "SRC03",
     "name": "건설업 임금실태조사",
     "grade": "B",
-    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/view.do?article_seq=153402&condition=&cpage=1&keyword=&mode=view&rows=10"
+    "mode": "latest_post",
+    "url": "https://info.cak.or.kr/lay1/bbs/S1T41C42/A/14/list.do",
+    "include_all": [
+      "건설업 임금실태조사",
+      "보고서"
+    ],
+    "exclude_any": [
+      "공표 일정",
+      "참고"
+    ],
+    "detail_base": "https://info.cak.or.kr"
   },
   {
     "id": "SRC04",
     "name": "조달청 간접공사비(제비율)",
     "grade": "B",
-    "url": "https://www.pps.go.kr/kor/bbs/view.do?bbsSn=2512300024&key=00038"
+    "mode": "latest_post",
+    "url": "https://www.pps.go.kr/kor/bbs/list.do?key=00038",
+    "include_all": [
+      "간접공사비",
+      "제비율"
+    ],
+    "exclude_any": [],
+    "detail_base": "https://www.pps.go.kr"
   },
   {
     "id": "SRC05",
     "name": "지방자치단체 입찰 및 계약집행기준",
     "grade": "B",
-    "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000016&nttId=127353"
+    "mode": "latest_post",
+    "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardList.do?bbsId=BBSMSTR_000000000016",
+    "include_all": [
+      "지방자치단체 입찰 및 계약집행기준"
+    ],
+    "exclude_any": [],
+    "detail_base": "https://www.mois.go.kr"
   },
   {
     "id": "SRC06",
     "name": "나라장터 가격정보현황서비스",
     "grade": "A",
-    "url": "https://www.data.go.kr/data/15129415/openapi.do"
+    "mode": "api_catalog",
+    "url": "https://www.data.go.kr/data/15129415/openapi.do",
+    "include_all": [],
+    "exclude_any": [],
+    "detail_base": "https://www.data.go.kr"
   }
 ]
